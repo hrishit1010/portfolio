@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Hrishit Madhavi</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="projects.html">Projects</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="experience.html">Experience</a></li>
+        <li><a href="hackathon.html">Hackathon</a></li>
+        <li><a href="extracurricular.html">Extra Curricular</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- === PROJECTS SECTION START === -->
+  <main class="container">
+    <section class="projects-section">
+      <h2>Projects</h2>
+      <p>Here are some of my best projects categorized into different domains.</p>
+
+      <!-- Tabs -->
+      <div class="tabs">
+        <button class="tab active" data-target="ml">ML & DS</button>
+        <button class="tab" data-target="fullapp">Full Applications</button>
+        <button class="tab" data-target="research">Research Posters</button>
+      </div>
+
+      <!-- ML & DS Projects -->
+<div class="tab-content active" id="ml">
+  <div class="project-grid">
+
+    <!-- 1. Alzheimer’s Classification -->
+    <div class="project-card">
+      <img src="assets\alzheimer.png" alt="Alzheimer Classification Model">
+      <h3>Alzheimer’s Classification Model Analysis</h3>
+      <p>
+        Developed deep learning and hybrid CNN–SVM models for Alzheimer's classification using MRI datasets. 
+        Implemented <strong>VGG16-based feature extraction</strong>, <strong>5-Fold Cross-Validation</strong>, 
+        and <strong>Grad-CAM</strong> visualizations for interpretability. Achieved up to <strong>98.07% accuracy</strong> 
+        using an RBF SVM kernel on CNN features.
+      </p>
+      <a href="https://github.com/hrishit1010/Alzheimer-Prediction" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Deep Learning</span>
+    </div>
+
+    <!-- 2. Diabetes Diagnosis -->
+    <div class="project-card">
+      <img src="assets\diabetes.jpg" alt="Diabetes Diagnosis ML Model">
+      <h3>Enhanced Diabetes Diagnosis with XGBoost</h3>
+      <p>
+        Conducted a comparative ML study using <strong>Logistic Regression, Decision Trees, CatBoost, and XGBoost</strong> 
+        on the PIMA Diabetes dataset. Applied data normalization, hyperparameter tuning (GridSearchCV), and ROC-AUC analysis. 
+        <strong>XGBoost</strong> achieved <strong>97% accuracy</strong> and <strong>0.94 AUC</strong>.
+      </p>
+      <a href="https://github.com/hrishit1010/Diabetes-Prediction" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Machine Learning</span>
+    </div>
+
+    <!-- 3. Indian Economy & Budget -->
+    <div class="project-card">
+      <img src="assets\india_economy.png" alt="Indian Economy Analysis">
+      <h3>Indian Economic and Union Budget Analysis</h3>
+      <p>
+        Built Python-based analytical pipelines using <strong>Pandas, Seaborn, Plotly, and Scikit-learn</strong> 
+        for forecasting GDP, HDI, and Life Expectancy using <strong>Linear Regression</strong>. 
+        Designed interactive dashboards for state-wise budget allocation and fiscal trend analysis (2013–2025).
+      </p>
+      <a href="https://github.com/hrishit1010/Indian-Budget-Analysis" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Data Analytics</span>
+    </div>
+
+    <!-- 4. ML Model Comparison -->
+    <div class="project-card">
+      <img src="assets\Text.png" alt="ML Model Analysis">
+      <h3>Text Summarization Research</h3>
+      <p>
+       Implemented <strong>extractive and abstractive text summarization</strong> models on the IMDb movie reviews dataset, 
+       leveraging advanced <strong>NLP preprocessing (NLTK, TF-IDF, Word Embeddings)</strong> and transformer architectures 
+       such as <strong>BART</strong> and <strong>T5</strong> to generate concise summaries. 
+       Fine-tuned models with <strong>ROUGE</strong> and <strong>BLEU</strong> evaluation metrics for optimal summarization quality. 
+       Additionally, implemented multiple supervised learning models — 
+       <strong>SVM, XGBoost, Random Forest, Logistic Regression</strong> — 
+       for <em>Social Network Ads</em> prediction and <em>Restaurant Review Sentiment Analysis</em>, 
+       applying <strong>Bagging, NLP preprocessing (NLTK, CountVectorizer)</strong>, and 
+       <strong>ensemble voting</strong> for improved accuracy.
+      </p>
+      <a href="https://github.com/hrishit1010/Text-Summarization-Research" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Classification / NLP</span>
+    </div>
+
+    <!-- 5. Cardiovascular Disease Prediction -->
+    <div class="project-card">
+      <img src="assets\cardio.jpg" alt="Cardiovascular Disease Prediction">
+      <h3>Cardiovascular Disease Prediction Analysis</h3>
+      <p>
+        Engineered a robust ML pipeline for cardiovascular disease detection using <strong>Random Forest, CatBoost, XGBoost</strong>, 
+        and <strong>Gradient Boosting</strong>. Performed <strong>SMOTE balancing, feature scaling, and outlier filtering</strong>. 
+        Achieved <strong>96.9% accuracy</strong> and <strong>0.99 AUC</strong> using tree-based ensembles.
+      </p>
+      <a href="https://github.com/hrishit1010/Cardiovascular_Prediction" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Ensemble Learning</span>
+    </div>
+
+    <!-- 6. F1 Telemetry Analysis App -->
+    <div class="project-card">
+      <img src="assets\for1.png" alt="F1 Telemetry App">
+      <h3>F1 Telemetry Analysis Tool</h3>
+      <p>
+        Created a <strong>PyQt5 GUI application</strong> leveraging the <strong>FastF1 API</strong> to fetch and visualize live telemetry data 
+        including <em>Speed, Throttle, Brake, Gear, RPM</em>. Integrated <strong>Matplotlib plotting</strong> and driver comparison modes 
+        for in-depth lap and sector analysis.
+      </p>
+      <a href="https://github.com/hrishit1010/FastF1-Analysis" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Data Visualization</span>
+    </div>
+
+  </div>
+</div>
+
+
+      <!-- Full Application Based Projects -->
+<div class="tab-content" id="fullapp">
+  <div class="project-grid">
+
+    <!-- 1. VoicoChess -->
+    <div class="project-card">
+      <img src="assets/voicochess.png" alt="VoicoChess AI Chess Game">
+      <h3>VoicoChess — Python Chess with AI & Voice Control</h3>
+      <p>
+        🏆 Ranked in the <strong>Top 10</strong> of my CSE Department Mini Project Competition under 
+        <strong>Dr. Mahesh Joshi</strong>. A complete <strong>Python + Pygame</strong> chess engine with 
+        <strong>voice control</strong>, <strong>drag-drop</strong> movement, and an intelligent 
+        <strong>AI opponent</strong> powered by <em>Negamax</em>, <strong>Alpha-Beta Pruning</strong>, 
+        and <strong>Transposition Tables</strong>. Implements all chess mechanics including castling, 
+        pawn promotion, and checkmate detection.
+      </p>
+      <a href="https://github.com/hrishit1010/VocioChess" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Python / AI / Pygame</span>
+    </div>
+
+    <!-- 2. e-Wallet (Java) -->
+    <div class="project-card">
+      <img src="assets/ewallet.png" alt="e-Wallet Java App">
+      <h3>e-Wallet — Personal Finance Management System</h3>
+      <p>
+        A <strong>Java Swing + MySQL</strong> desktop application built in <strong>Apache NetBeans</strong>, 
+        enabling users to manage finances efficiently. Features <strong>multi-account support</strong>, 
+        transaction history, goal tracking, and real-time <strong>XChart visualizations</strong>. 
+        Developed collaboratively by a <strong>team of four</strong>.
+      </p>
+      <a href="https://github.com/hrishit1010/Java_Mini_Project_Finance" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Java / Swing / MySQL</span>
+    </div>
+
+    <!-- 3. Music Player -->
+    <div class="project-card">
+      <img src="assets/musipy.png" alt="Music Player App">
+      <h3>Music Player — Local + YouTube Integrated Player</h3>
+      <p>
+        Created during <strong>12th Grade (IP Project 2022)</strong> under <strong>Aparna Bansal</strong>. 
+        A Python-based desktop app integrating <strong>local MP3 playback</strong> and 
+        <strong>YouTube music streaming</strong>. Built using <strong>Tkinter</strong>, 
+        <strong>Pytube</strong>, and <strong>MySQL</strong> with features such as playlists, metadata handling, 
+        and Windows notifications.
+      </p>
+      <a href="https://github.com/hrishit1010/Musipy" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Python / Tkinter / MySQL</span>
+    </div>
+
+    <!-- 4. TimeTable Management -->
+    <div class="project-card">
+      <img src="assets/timetable.png" alt="TimeTable Management App">
+      <h3>TimeTable Management System</h3>
+      <p>
+        A <strong>standalone Electron desktop application</strong> for automated university timetable generation. 
+        Handles <strong>parallel sessions</strong>, faculty constraints, and room availability. 
+        Developed in <strong>2024</strong> under <strong>Dr. Pradnya Kulkarni</strong> as a 
+        <strong>full-stack desktop app</strong> with offline support and clean UI.
+      </p>
+      <a href="https://github.com/hrishit1010/TimeTable-Management" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Electron / JS / Automation</span>
+    </div>
+
+    <!-- 5. Photogrammetry Pipeline -->
+    <div class="project-card">
+      <img src="assets/photogrammetry.png" alt="Photogrammetry 3D Reconstruction">
+      <h3>Photogrammetry — 3D Reconstruction Pipeline</h3>
+      <p>
+        A <strong>computer vision pipeline</strong> for reconstructing <strong>3D models</strong> from 2D images. 
+        Combines <strong>Structure-from-Motion (SfM)</strong> and <strong>Multi-View Stereo (MVS)</strong> 
+        techniques using <strong>SIFT / ORB</strong> for feature extraction and <strong>camera calibration</strong>. 
+        Built during <strong>Summer 2024</strong> with GPU acceleration and cross-platform execution support.
+      </p>
+      <a href="https://github.com/hrishit1010/VIBE3" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Computer Vision / 3D / Python</span>
+    </div>
+
+    <!-- 6. Soil Health Monitor -->
+    <div class="project-card">
+      <img src="assets/soilhealth.png" alt="Soil Health Monitor IoT Project">
+      <h3>Soil Health Monitor — IoT-Based Agricultural Prototype</h3>
+      <p>
+        Developed during <strong>Fall 2023</strong>, this <strong>Arduino Uno (R3)</strong> and 
+        <strong>Sensirion SHT10</strong>-based IoT prototype monitors <strong>soil temperature</strong> 
+        and <strong>humidity</strong> in real-time to promote <strong>sustainable farming</strong>. 
+        Uses <strong>embedded C++</strong> for microcontroller logic, <strong>LCD display</strong> for output, 
+        and alert mechanisms for abnormal soil health values. Tested on various soil types (alluvial, black, laterite, sandy).
+      </p>
+      <a href="https://github.com/hrishit1010/IoT-Soil-Monitoring" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">IoT / Arduino / Sensor Systems</span>
+    </div>
+    <div class="project-card">
+      <img src="assets/crisiscraddle.png" alt="CrisisCradle Disaster Prediction System">
+      <h3>CrisisCradle — Disaster Prediction & Alert System (Capstone)</h3>
+      <p>
+        A <strong>machine learning-integrated AWS-based web platform</strong> for real-time 
+        <strong>disaster prediction and alert generation</strong>. The system aggregates <strong>meteorological, seismic, 
+        and satellite data</strong> and leverages ML models for forecasting natural calamities. 
+        Deployed using <strong>AWS EC2, S3, and Lambda</strong> with automated SMS/email notifications via <strong>Twilio API</strong>. 
+        Designed as a <strong>Capstone Project (2025)</strong> for practical disaster management and public safety.
+      </p>
+      <a href="https://github.com/hrishit1010/CrisisCradle" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">ML / AWS / Full Stack</span>
+    </div>
+
+    <!-- 8. Portfolio Website -->
+    <div class="project-card">
+      <img src="assets/portfolio.png" alt="Portfolio Website">
+      <h3>Personal Portfolio Website</h3>
+      <p>
+        Designed and developed a responsive <strong>personal portfolio website</strong> showcasing 
+        <strong>projects, research, and hackathon achievements</strong>. Built with <strong>HTML, CSS, and JavaScript</strong>, 
+        featuring dynamic tab animations, glowing UI effects, and section-based navigation. 
+        Deployed on <strong>GitHub Pages</strong> with continuous improvement through modular updates.
+      </p>
+      <a href="https://github.com/hrishit1010/portfolio" target="_blank" class="btn-github">🔗 View on GitHub</a>
+      <span class="tag">Web Development / Frontend</span>
+    </div>
+
+  </div>
+</div>
+
+
+      <!-- Research Posters -->
+<div class="tab-content" id="research">
+  <div class="project-grid">
+
+    <!-- 1. Indian Union Budget 2024 Analysis -->
+    <div class="project-card">
+      <img src="assets/unionbudget2024.png" alt="Indian Union Budget 2024 Analysis Poster">
+      <h3>Indian Union Budget 2024 — Data Analysis Study</h3>
+      <p>
+        A comprehensive <strong>data analytics research poster</strong> analyzing fiscal allocations, 
+        sectoral distributions, and key policy trends in the <strong>Indian Union Budget 2024</strong>. 
+        Implemented <strong>Python (Pandas, Matplotlib, Seaborn)</strong> for visualization and 
+        <strong>statistical modeling</strong> to interpret economic insights from budgetary data.
+      </p>
+      <a href="assets/Indian_Union_Budget_2024_Analysis.pdf" target="_blank" class="btn-github">📄 View Poster (PDF)</a>
+      <span class="tag">Data Analysis / Economics / Research</span>
+    </div>
+
+    <!-- 2. End-to-End Document Summarizer -->
+    <div class="project-card">
+      <img src="assets/docsum_poster.png" alt="End-to-End Document Summarizer Poster">
+      <h3>End-to-End Document Summarizer</h3>
+      <p>
+        Presented in <strong>February 2025</strong>, this research focused on <strong>text summarization pipelines</strong> 
+        integrating <strong>transformer-based models (T5, BART)</strong> for abstractive and extractive summarization. 
+        Showcased real-world applications in legal, financial, and academic document summarization.
+      </p>
+      <a href="assets/End_to_End_Document_Summarizer_Poster.pdf" target="_blank" class="btn-github">📄 View Poster (PDF)</a>
+      <span class="tag">NLP / Deep Learning / Research</span>
+    </div>
+
+    <!-- 3. Geographical Data Storage Issues & Solutions -->
+    <div class="project-card">
+      <img src="assets/geodata_poster.png" alt="Geographical Data Storage Poster">
+      <h3>Geographical Data Storage Issues & Solutions</h3>
+      <p>
+        Conducted in <strong>April 2025</strong> under the guidance of <strong>Dr. Madhura Pathak</strong>. 
+        The study explored <strong>geospatial data management challenges</strong>, including data redundancy, 
+        indexing, and compression. Proposed a <strong>hybrid storage model</strong> using 
+        <strong>HDFS and PostgreSQL with PostGIS</strong> for scalable and efficient data retrieval.
+      </p>
+      <a href="assets/Geographical_Data_Storage_Poster.pdf" target="_blank" class="btn-github">📄 View Poster (PDF)</a>
+      <span class="tag">Big Data / GIS / Research</span>
+    </div>
+
+    <!-- 4. Application of HPC in NASA Space Exploration -->
+    <div class="project-card">
+      <img src="assets/hpc_nasa.png" alt="HPC in NASA Space Exploration Poster">
+      <h3>Application of HPC in NASA Space Exploration</h3>
+      <p>
+        Presented in <strong>October 2025</strong> under <strong>Dr. Madhura Pathak</strong>. 
+        This research explored the role of <strong>High-Performance Computing (HPC)</strong> in 
+        <strong>NASA’s deep-space missions</strong>, focusing on <strong>parallel computation</strong>, 
+        <strong>simulation workloads</strong>, and <strong>AI-assisted trajectory modeling</strong> for 
+        next-generation aerospace exploration.
+      </p>
+      <a href="assets/HPC_NASA_Exploration_Poster.pdf" target="_blank" class="btn-github">📄 View Poster (PDF)</a>
+      <span class="tag">HPC / Space Research / Computational Science</span>
+    </div>
+
+  </div>
+</div>
+
+  <!-- === PROJECTS SECTION END === -->
+
+  <footer>
+    <p>© 2025 Hrishit Madhavi</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
